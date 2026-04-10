@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Face Yoga &amp; Skincare Hub</title>
+  <meta name="description" content="Learn why this face yoga and skincare blog exists and how it helps women 25–45 feel confident in their skin.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://www.example.com/about.html">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html">Face Yoga &amp; Skincare Hub</a>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="section">
+      <div class="container">
+        <h1>About Face Yoga &amp; Skincare Hub</h1>
+        <p>This blog is created for women between 25 and 45 who want to age gracefully, feel confident in their skin, and use simple routines that actually fit a busy life.</p>
+
+        <h2>My Philosophy</h2>
+        <p>I believe in combining gentle, natural practices like face yoga with evidence-based skincare. No extreme rules or fear-based marketing—just clear, practical guidance.</p>
+
+        <h2>What You’ll Find Here</h2>
+        <ul>
+          <li>Step-by-step face yoga routines with clear instructions</li>
+          <li>Minimal, smart skincare routines for different skin types</li>
+          <li>Anti-aging habits that are realistic and sustainable</li>
+          <li>Honest product reviews and curated recommendations (with affiliate links clearly disclosed)</li>
+        </ul>
+
+        <h2>Who This Is For</h2>
+        <p>If you are a woman in your late twenties, thirties, or early forties who wants:</p>
+        <ul>
+          <li>To feel more confident bare-faced</li>
+          <li>To support your skin without overcomplicating things</li>
+          <li>To use mindful rituals to relax and de-stress</li>
+        </ul>
+
+        <p>Then you are exactly where you need to be.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Face Yoga &amp; Skincare Hub. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var yearSpan = document.getElementById("year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+      var navToggle = document.getElementById("navToggle");
+      var mainNav = document.getElementById("mainNav");
+      if (navToggle && mainNav) {
+        navToggle.addEventListener("click", function () {
+          mainNav.classList.toggle("open");
+        });
+      }
+    });
+  </script>
+</body>
+</html>

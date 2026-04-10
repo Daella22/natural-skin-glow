@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Face Yoga &amp; Skincare Hub</title>
+  <meta name="description" content="Contact me with your questions about face yoga, skincare routines, or collaborations.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://www.example.com/contact.html">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html">Face Yoga &amp; Skincare Hub</a>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="section">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>Have a question, collaboration idea, or product you’d like me to review? Send a message using the form below.</p>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required placeholder="How can I help?">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Send Message</button>
+          <p class="form-note">This form is for demonstration. Connect it to your email service or backend to receive messages.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Face Yoga &amp; Skincare Hub. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var yearSpan = document.getElementById("year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+      var navToggle = document.getElementById("navToggle");
+      var mainNav = document.getElementById("mainNav");
+      if (navToggle && mainNav) {
+        navToggle.addEventListener("click", function () {
+          mainNav.classList.toggle("open");
+        });
+      }
+    });
+  </script>
+</body>
+</html>
