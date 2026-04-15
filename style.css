@@ -63,3 +63,23 @@ a:hover {
 .article-list a {
     font-weight: bold;
 }
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <a href="index.html">Veloura</a>
+    </div>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="language-switcher">
+      <a href="index.html">EN</a> |
+      <a href="ro/index.html">RO</a>
+    </div>
+
+  </div>
+</header>
